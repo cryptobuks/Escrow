@@ -1,0 +1,15 @@
+<center><h1> ($) Contacts (/$) </h1></center>
+
+<body>
+	
+	<div>
+		<ul>
+			<% @contacts.each do |c| %>
+			<li><%= c.name %></li><br />
+			<li><%= c.phonenumber %></li>
+			<% end %>
+		</ul>
+	</div>
+
+</body>
+

@@ -1,0 +1,23 @@
+<h1>New Message</h1>
+
+<%= form_for @message do |m| %>
+	<div class="field">
+		<%= m.label :name %>
+		<%= m.text_field :name %>
+	</div>
+
+	<div class="field">
+		<%= m.label :city %>
+		<%= m.text_field :city %>
+	</div>
+
+	<div class="field">
+		<%= m.label :founded %>
+		<%= m.text_field :founded %>
+	</div>
+
+	<div>
+		<%= m.submit %>
+	</div>
+
+<% end %>

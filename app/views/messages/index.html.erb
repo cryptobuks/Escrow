@@ -1,0 +1,17 @@
+<center><h1> ($) Messages (/$) </h1></center>
+
+<body>
+	
+	<div>
+		<ul>
+			<% @messages.each do |m| %>
+			<li><%= m.name %></li><br />
+			<li><%= m.phonenumber %> rice</li><br />
+			<li><%= m.message %></li><br />
+			<li><%= m.when %></li>
+			<% end %>
+		</ul>
+	</div>
+
+</body>
+
