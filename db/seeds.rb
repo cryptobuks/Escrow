@@ -13,6 +13,6 @@ User.destroy_all
 
 	contact = Contact.create({name:"jay", phonenumber:"4321213232"})
 
-	message = Message.create({name:"jonny", phonenumber:"3103029392", message:"what up homie", timewhen: "3/25/14" })
+	message = Message.create({name:"jonny", phonenumber:"3103029392", message:"what up homie", date: "3/4/2012", time: "3pm" })
 
 # msg1 = user.messages.create( .... )
