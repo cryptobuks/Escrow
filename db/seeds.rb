@@ -6,5 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-	users = User.create([{firstname:"randy", lastname:"wdi", email:"jtbitt@gmail.com", username:"randy",
-		phonenumber:"3123131212"}])
+User.destroy_all
+
+	user = User.create({firstname:"randy", lastname:"wdi", email:"jtbitt@gmail.com", username:"randy1",
+		phonenumber:"3123131212"})
+
+	contact = Contact.create({name:"jay", phonenumber:"4321213232"})
+
+	message = Message.create({name:"jonny", phonenumber:"3103029392", message:"what up homie", timewhen: "3/25/14" })
+
+# msg1 = user.messages.create( .... )

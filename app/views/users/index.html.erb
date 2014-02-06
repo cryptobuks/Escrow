@@ -1,25 +1,29 @@
 <center><h1> ($) Users (/$) </h1></center>
 
 <body>
-	
-	<div>
-		<ul>
-			<% @users.each do |u| %>
-			<li><%= u.firstname %></li><br />
-			<li><%= u.lastname %> </li><br />
-			<li><%= u.email %></li><br />
-			<li><%= u.username %></li><br />
-			<li><%= u.phonenumber %></li>
-			<% end %>
-		</ul>
-	</div>
 
-</body>
+	<table class="table table-hover">
+  		<thead>
+    			<tr>
+      				<th>First Name</th>
+      				<th>Last Name</th>
+      				<th>E-Mail</th>
+      				<th>New Username</th>
+      				<th>Desired Password</th>
+      				<th>Phone Number</th>
+    			</tr>
+  		</thead>
 
-field :firstname, type: String
-  field :lastname, type: String
-  field :email, type: String
-  field :username, type: String
-  field :salt, type: String
-  field :hashed_password, type: String
-  field :phonenumber, type: String
+  		<tbody>
+    		<% @users.each do |u| %>
+      			<tr>
+        			<td><%= u.firstname %></td>
+        			<td><%= u.lastname %></td>
+        			<td><%= u.email %></td>
+        			<td><%= u.username %></td>
+        			<td><%= u.password %></td>
+        			<td><%= u.phonenumber %></td>
+      			</tr>
+    	<% end %>
+  		</tbody>
+	</table>

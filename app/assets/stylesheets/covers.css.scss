@@ -7,4 +7,12 @@ $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 $navbar-default-link-color: #f36;*/
 
+.img-thumbnail {
+	max-height: 475px;
+	min-height: 475px;
+	max-width: 475px;
+	min-width: 475px;
+	margin: 0 auto;
+}
+
 @import "bootstrap";

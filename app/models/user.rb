@@ -33,10 +33,11 @@ class User
 
   private
     def hash_stuff
+      puts "DUDE!!!!"
       self.salt = BCrypt::Engine.generate_salt
       self.hashed_password = 
-      BCrypt::Engine.hash_secret self.password, self.salt
-        self.password = nil
+        BCrypt::Engine.hash_secret self.password, self.salt
+      self.password = nil
     end
 end
 

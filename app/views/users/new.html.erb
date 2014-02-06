@@ -1,6 +1,8 @@
 <h1>New User</h1>
 
-<%= form_for @users do |u| %>
+<form class="form-horizontal" role="form">
+<%= form_for @user do |u| %>
+
 	<div class="field">
 		<%= u.label :firstname %>
 		<%= u.text_field :firstname %>
@@ -29,5 +31,6 @@
 	<div>
 		<%= u.submit %>
 	</div>
+</form>
 
 <% end %>

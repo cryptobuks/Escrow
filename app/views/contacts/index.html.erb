@@ -2,14 +2,21 @@
 
 <body>
 	
-	<div>
-		<ul>
-			<% @contacts.each do |c| %>
-			<li><%= c.name %></li><br />
-			<li><%= c.phonenumber %></li>
-			<% end %>
-		</ul>
-	</div>
+	<table class="table table-hover">
+  		<thead>
+    			<tr>
+      				<th>Name</th>
+      				<th>Phone Number</th>
+    			</tr>
+  		</thead>
 
-</body>
+  		<tbody>
+    		<% @contacts.each do |c| %>
+      			<tr>
+        			<td><%= c.name %></td>
+        			<td><%= c.phonenumber %></td>
+      			</tr>
+    	<% end %>
+  		</tbody>
+	</table>
 

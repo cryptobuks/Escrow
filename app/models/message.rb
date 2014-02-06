@@ -3,7 +3,8 @@ class Message
   field :name, type: String
   field :phonenumber, type: String
   field :message, type: String
-  field :when, type: String
+  field :date, type: String
+  field :time, type: String
 
   belongs_to :user
 

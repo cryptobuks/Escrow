@@ -1,4 +1,4 @@
-class ContactsController
+class ContactsController < ApplicationController
 
   def index
   	@contacts = Contact.all
@@ -6,13 +6,15 @@ class ContactsController
 
   def show
   	@show = Contact.find(params[:id])
+  end
 
   def new
   	@contact = Contact.new
   end
 
   def create
-  	Contact.create(params[:contact].permit(:firstname, :lastname, :email, :username, :password_digest, :phonenumber))
+  	Contact.create(params[:contact].permit(:name, :phonenumber))
+    redirect_to contacts_path
   end
 
 end

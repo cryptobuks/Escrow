@@ -1,17 +1,30 @@
 <center><h1> ($) Messages (/$) </h1></center>
 
 <body>
-	
-	<div>
-		<ul>
-			<% @messages.each do |m| %>
-			<li><%= m.name %></li><br />
-			<li><%= m.phonenumber %> rice</li><br />
-			<li><%= m.message %></li><br />
-			<li><%= m.when %></li>
-			<% end %>
-		</ul>
-	</div>
+
+	<table class="table table-hover">
+  		<thead>
+    			<tr>
+      				<th>Name</th>
+      				<th>Phone Number</th>
+      				<th>Message</th>
+      				<th>Date</th>
+      				<th>Time</th>
+    			</tr>
+  		</thead>
+
+  		<tbody>
+    		<% @messages.each do |m| %>
+      			<tr>
+        			<td><%= m.name %></td>
+        			<td><%= m.phonenumber %></td>
+        			<td><%= m.message %></td>
+        			<td><%= m.date %></td>
+        			<td><%= m.time %></td>
+      			</tr>
+    	<% end %>
+  		</tbody>
+	</table>
 
 </body>
 
