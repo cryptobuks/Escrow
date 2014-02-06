@@ -8,6 +8,7 @@ gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.1.0'
+gem 'rails_12factor'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
