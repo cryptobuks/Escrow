@@ -1,0 +1,10 @@
+<%= link_to 'Back to contacts', contacts_path %>
+<h1><%= @contact.name %></h1>
+
+<dt>Name</dt>
+<dd><%= @contact.name %></dd>
+
+<dt>Phone Number</dt>
+<dd><%= @contact.phonenumber %></dd>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %>

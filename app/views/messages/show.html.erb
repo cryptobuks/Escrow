@@ -1,0 +1,19 @@
+<%= link_to 'Back to messages', messages_path %>
+<h1><%= @message.name %></h1>
+
+<dt>Name</dt>
+<dd><%= @message.name %></dd>
+
+<dt>Phone Number</dt>
+<dd><%= @message.phonenumber %></dd>
+
+<dt>Message</dt>
+<dd><%= @message.message %></dd>
+
+<dt>Date</dt>
+<dd><%= @message.date %></dd>
+
+<dt>Time</dt>
+<dd><%= @message.time %></dd>
+
+<%= link_to 'Edit', edit_message_path(@message) %>

@@ -21,6 +21,9 @@
         			<td><%= m.message %></td>
         			<td><%= m.date %></td>
         			<td><%= m.time %></td>
+              <td><%= link_to 'Show', m %></td>
+              <!-- <td><%#= link_to 'Edit', edit_c_path(c) %></td> -->
+              <td><%= link_to 'Destroy', m, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       			</tr>
     	<% end %>
   		</tbody>

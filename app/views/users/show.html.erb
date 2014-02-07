@@ -1,0 +1,19 @@
+<%= link_to 'Back to users', users_path %>
+<h1><%= @user.firstname + " " + @user.lastname %></h1>
+
+<dt>First Name</dt>
+<dd><%= @user.firstname %></dd>
+
+<dt>Last Name</dt>
+<dd><%= @user.lastname %></dd>
+
+<dt>E-Mail</dt>
+<dd><%= @user.email %></dd>
+
+<dt>Username</dt>
+<dd><%= @user.username %></dd>
+
+<dt>Phone Number</dt>
+<dd><%= @user.phonenumber %></dd>
+
+<%= link_to 'Edit', edit_user_path(@user) %>

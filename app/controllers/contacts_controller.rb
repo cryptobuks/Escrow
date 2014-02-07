@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   end
 
   def show
-  	@show = Contact.find(params[:id])
+    @contact = Contact.find(params[:id])
   end
 
   def new
@@ -13,8 +13,40 @@ class ContactsController < ApplicationController
   end
 
   def create
-  	Contact.create(params[:contact].permit(:name, :phonenumber))
+    if Contact.create(contact_params)
+      redirect_to action: 'index'
+      flash[:notice] = "successfully created contact!"
+    else
+      render action: 'new'
+    end
+  end
+
+  def edit
+  end
+
+   def update
+
+    @contact = Contact.find(params[:id])
+
+    if @contact.update contact_params
+      flash[:notice] = "Successfully updated contact!"
+      redirect_to action: 'index'
+    else
+      render action: 'new'
+    end
+  end
+
+  def destroy
+    c = Contact.find(params[:id])
+    c.destroy
     redirect_to contacts_path
+  end
+
+
+  private
+
+  def contact_params
+    params.require(:contact).permit(:name, :phonenumber)
   end
 
 end

@@ -17,8 +17,7 @@ class User
 
   validates :firstname, presence: true
   validates :lastname, presence: true
-  # VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  # validates :email, presence: true, uniqueness: true { with: VALID_EMAIL_REGEX }
+  validates :email, presence: true, uniqueness: true
   validates :username, presence: true, uniqueness: true, length: { minimum: 6 }
   validates :phonenumber, presence: true, uniqueness: true
 
@@ -33,7 +32,6 @@ class User
 
   private
     def hash_stuff
-      puts "DUDE!!!!"
       self.salt = BCrypt::Engine.generate_salt
       self.hashed_password = 
         BCrypt::Engine.hash_secret self.password, self.salt
