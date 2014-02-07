@@ -1,0 +1,33 @@
+<%= form_for @user do |u| %>
+
+	<div class="field">
+		<%= u.label :firstname %>
+		<%= u.text_field :firstname %>
+	</div>
+
+	<div class="field">
+		<%= u.label :lastname %>
+		<%= u.text_field :lastname %>
+	</div>
+
+	<div class="field">
+		<%= u.label :email %>
+		<%= u.text_field :email %>
+	</div>
+
+	<div class="field">
+		<%= u.label :username %>
+		<%= u.text_field :username %>
+	</div>
+
+	<div class="field">
+		<%= u.label :phonenumber %>
+		<%= u.text_field :phonenumber %>
+	</div>
+
+	<div>
+		<%= u.submit %>
+	</div>
+</form>
+
+<% end %>

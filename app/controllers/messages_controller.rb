@@ -22,6 +22,7 @@ class MessagesController < ApplicationController
   end
 
   def edit
+    @message = Message.find(params[:id])
   end
 
    def update

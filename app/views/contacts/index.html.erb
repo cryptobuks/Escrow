@@ -16,7 +16,7 @@
         			<td><%= c.name %></td>
         			<td><%= c.phonenumber %></td>
               <td><%= link_to 'Show', c %></td>
-              <!-- <td><%#= link_to 'Edit', edit_c_path(c) %></td> -->
+              <td><%= link_to 'Edit', c, action: 'edit' %></td>
               <td><%= link_to 'Destroy', c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       			</tr>
     	<% end %>
