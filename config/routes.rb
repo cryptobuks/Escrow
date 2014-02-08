@@ -1,5 +1,8 @@
 Easytexts::Application.routes.draw do
 
+# get 'contacts/:id/edit'
+
+get 'users/:id/edit' => 'users#edit', :as => :edit_user 
 resources :users
 resources :covers
 resources :messages
@@ -8,6 +11,7 @@ resources :contacts
 resources :auths, only:[:new, :create]
 
 delete "auths" => "auths#destroy"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

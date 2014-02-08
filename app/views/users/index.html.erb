@@ -24,7 +24,7 @@
         			<td><%= u.password %></td>
         			<td><%= u.phonenumber %></td>
               <td><%= link_to 'Show', u %></td>
-              <td><%= link_to 'Edit', u, { action: 'edit'} %>
+              <td><%= link_to 'Edit', edit_user_path(u) %>
               <td><%= link_to 'Destroy', u, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       			</tr>
     	<% end %>
