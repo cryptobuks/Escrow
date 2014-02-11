@@ -1,4 +1,4 @@
-<center><h1> ($) Users (/$) </h1></center>
+<center><h1>Users</h1></center>
 
 <body>
 
@@ -23,9 +23,8 @@
         			<td><%= u.username %></td>
         			<td><%= u.password %></td>
         			<td><%= u.phonenumber %></td>
-              <td><%= link_to 'Show', u %></td>
               <td><%= link_to 'Edit', edit_user_path(u) %>
-              <td><%= link_to 'Destroy', u, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= link_to 'Delete', u, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger btn-sm glyphicon glyphicon-trash" %></td>
       			</tr>
     	<% end %>
   		</tbody>

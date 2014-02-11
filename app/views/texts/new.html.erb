@@ -1,0 +1,32 @@
+<%= form_for @text do |t| %>
+
+<div class="field">
+	<%= t.label :account_sid %>
+	<%= t.text_field :account_sid %>
+</div>
+
+<div class="field">
+	<%= t.label :auth_token %>
+	<%= t.text_field :auth_token %>
+</div>
+
+<div class="field">
+	<%= t.label :body %>
+	<%= t.text_field :body %>
+</div>
+
+<div class="field">
+	<%= t.label :to %>
+	<%= t.text_field :to %>
+</div>
+
+<div class="field">
+	<%= t.label :from %>
+	<%= t.text_field :from %>
+</div>
+
+<div>
+	<%= t.submit %>
+</div>
+
+<% end %>

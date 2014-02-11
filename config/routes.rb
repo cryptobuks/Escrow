@@ -2,11 +2,14 @@ Easytexts::Application.routes.draw do
 
 # get 'contacts/:id/edit'
 
+get 'users' => 'users#index', :as => :home_user
 get 'users/:id/edit' => 'users#edit', :as => :edit_user 
+
 resources :users
 resources :covers
 resources :messages
 resources :contacts
+resources :texts
 
 resources :auths, only:[:new, :create]
 
