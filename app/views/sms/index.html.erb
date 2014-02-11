@@ -1,0 +1,17 @@
+<h1>Texts I've Sent From This Ridiculous App</h1>
+<table class="table table-striped">
+	<tr>
+	<th>From</th>
+	<th>To</th>
+	<th>Message Text</th>
+	<th>Sent At</th>
+	</tr>
+	<% @sms.each do |s| %>
+	<tr>
+	<td><%= number_to_phone(s.from, area_code: true)%>  </td> 
+	<td><%= number_to_phone(s.to, area_code: true)%> </td> 
+	<td><%= s.body %> </td>
+	<td><%= s.created_at.to_formatted_s(:long) %></td>
+	</tr>
+	<% end %>
+</table>

@@ -10,12 +10,15 @@ resources :covers
 resources :messages
 resources :contacts
 resources :texts
+resources :sms
+
+root 'sms#new'
+get 'sms/new', to: "sms#new"
+post '/send_text_message' => "sms#send_text_message"
 
 resources :auths, only:[:new, :create]
 
 delete "auths" => "auths#destroy"
-
-match 'twilio/process_sms' => 'twilio#process_sms'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
