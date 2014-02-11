@@ -12,12 +12,10 @@ resources :covers
 resources :messages
 resources :contacts
 resources :texts
-resources :twilios
 
 resources :auths, only:[:new, :create]
 
 delete "auths" => "auths#destroy"
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

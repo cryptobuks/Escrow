@@ -1,4 +1,4 @@
-class TwiliosController < ApplicationController
+class TwilioController < ApplicationController
 
   def process_sms
     @city = params[:FromCity].capitalize
