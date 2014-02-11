@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem "mongoid", github: "mongoid/mongoid"
 gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby'
+
+#get set up for SMS
 gem 'twilio-ruby'
 
 # Use SCSS for stylesheets

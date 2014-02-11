@@ -2,6 +2,8 @@ Easytexts::Application.routes.draw do
 
 # get 'contacts/:id/edit'
 
+# match 'twilio/process_sms' => 'twilio#process_sms'
+
 get 'users' => 'users#index', :as => :home_user
 get 'users/:id/edit' => 'users#edit', :as => :edit_user 
 
