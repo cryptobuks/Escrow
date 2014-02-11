@@ -2,8 +2,6 @@ Easytexts::Application.routes.draw do
 
 # get 'contacts/:id/edit'
 
-match 'twilio/process_sms' => 'twilio#process_sms'
-
 get 'users' => 'users#index', :as => :home_user
 get 'users/:id/edit' => 'users#edit', :as => :edit_user 
 
@@ -16,6 +14,8 @@ resources :texts
 resources :auths, only:[:new, :create]
 
 delete "auths" => "auths#destroy"
+
+match 'twilio/process_sms' => 'twilio#process_sms'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
