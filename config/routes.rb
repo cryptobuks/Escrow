@@ -12,6 +12,7 @@ resources :covers
 resources :messages
 resources :contacts
 resources :texts
+resources :twilios
 
 resources :auths, only:[:new, :create]
 
