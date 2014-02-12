@@ -1,11 +1,14 @@
 class ContactsController < ApplicationController
 
   def index
-  	@contacts = Contact.all
+  	@contacts = current_user.contacts
   end
 
   def show
     @contact = Contact.find(params[:id])
+
+    #if current_user.contacts
+
   end
 
   def new
@@ -13,7 +16,9 @@ class ContactsController < ApplicationController
   end
 
   def create
-    if Contact.create(contact_params)
+    @contact = Contact.new(contact_params)
+    if @contact.save
+      current_user.contacts.push(@contact)
       redirect_to action: 'index'
       flash[:notice] = "successfully created contact!"
     else
