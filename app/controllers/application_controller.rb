@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
   helper_method :new_user
+  helper_method :admin
 
   # Who is currently logged in, if anyone
   def current_user
@@ -17,10 +18,8 @@ class ApplicationController < ActionController::Base
     new_user = !current_user
   end
 
-  def bigbossman
-      bigbossman = (User.find("52f579904a6179ea18060000") && current_user) &&
-      !new_user || ((User.find("52f579904a6179ea18060000")) && current_user)
+  def admin
+    User.find_by admin:true
   end
-
 
 end

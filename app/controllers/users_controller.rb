@@ -1,32 +1,46 @@
 class UsersController < ApplicationController
 
   def index
-    if bigbossman
+    if admin
       @users = User.all
-    else
+    else !admin
       redirect_to covers_path
     end
   end
 
   def show
-    @user = User.find(params[:id])
+    if admin
+      @user = User.find(params[:id])
+    else
+      redirect_to covers_path
+    end
   end
 
   def new
-    @user = User.new
+    if admin
+      @user = User.new
+    else
+      redirect_to covers_path
+    end
   end
 
   def create
-    if User.create(user_params)
-      redirect_to action: 'index'
-      flash[:notice] = "successfully created user!"
+    if admin
+      if User.create(user_params)
+        redirect_to action: 'index'
+        flash[:notice] = "successfully created user!"
+      else
+        render action: 'new'
+      end
     else
-      render action: 'new'
     end
   end
 
   def edit
-    @user = User.find(params[:id])
+    if admin
+      @user = User.find(params[:id])
+    else
+    end
   end
 
   def update
