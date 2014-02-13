@@ -17,10 +17,6 @@ class ApplicationController < ActionController::Base
     new_user = !current_user
   end
 
-  def bigbossman
-      bigbossman = (User.find("52f579904a6179ea18060000") && current_user) &&
-      !new_user || ((User.find("52f579904a6179ea18060000")) && current_user)
-  end
 
 
 end

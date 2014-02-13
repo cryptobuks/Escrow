@@ -1,11 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-    if bigbossman
       @users = User.all
-    else
-      redirect_to covers_path
-    end
   end
 
   def show

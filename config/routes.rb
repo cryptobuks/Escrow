@@ -5,9 +5,7 @@ get 'users/:id/edit' => 'users#edit', :as => :edit_user
 
 resources :users
 resources :covers
-resources :messages
 resources :contacts
-resources :texts
 resources :sms_messages
 
 resources :auths, only:[:new, :create]

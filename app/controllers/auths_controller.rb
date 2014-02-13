@@ -12,11 +12,21 @@ class AuthsController < ApplicationController
 
 	# Log them in!
 	def create
-		user = User.find_by(username: params[:user][:username])
-		if user.authenticated?(params[:user][:password])
-			session[:user_id] = user.id
-			redirect_to covers_path
-		end
+		# if params[:user][:username].present?
+			user = User.find_by(username: params[:user][:username])
+			
+			if user && user.authenticated?(params[:user][:password])
+				session[:user_id] = user.id
+				redirect_to covers_path
+
+			else
+				redirect_to new_auth_path
+				flash[:notice] = "username and/or password is invalid"
+			end
+		# else
+			# redirect_to new_auth_path
+			# flash[:notice] = "username and/or password is invalid"
+		# end
 	end
 
 	# Log out
