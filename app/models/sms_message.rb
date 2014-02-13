@@ -1,4 +1,4 @@
-class Sm
+class SmsMessage
   include Mongoid::Document
   include Mongoid::Timestamps
   field :from, type: String

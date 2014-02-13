@@ -1,7 +1,5 @@
 Easytexts::Application.routes.draw do
 
-# get 'contacts/:id/edit'
-
 get 'users' => 'users#index', :as => :home_user
 get 'users/:id/edit' => 'users#edit', :as => :edit_user 
 
@@ -10,11 +8,7 @@ resources :covers
 resources :messages
 resources :contacts
 resources :texts
-resources :sms
-
-# root 'sms#new'
-# get 'sms/new', to: "sms#new"
-# post '/send_text_message' => "sms#send_text_message"
+resources :sms_messages
 
 resources :auths, only:[:new, :create]
 

@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navlist">
       <ul class="nav navbar-nav">
         <li><%= link_to "Contacts", contacts_path %></li>
-        <li><%= link_to "Messages", sms_path %></li>
+        <li><%= link_to "Messages", sms_messages_path %></li>
         <li class="active"><%= current_user ? current_user.username : "logged out" %> </h1>
 
   <%= button_to "Log out", auths_path, method: :delete %></li>
