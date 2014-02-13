@@ -11,6 +11,7 @@ class User
   field :salt, type: String
   field :hashed_password, type: String
   field :phonenumber, type: String
+  field :admin, type: Mongoid::Boolean
 
   has_many :contacts
   has_many :sms_messages

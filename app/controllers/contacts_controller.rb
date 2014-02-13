@@ -1,33 +1,50 @@
 class ContactsController < ApplicationController
 
   def index
-  	@contacts = current_user.contacts
+  	if current_user
+      @contacts = current_user.contacts
+    else new_user
+      redirect_to new_user_path
+    end
   end
 
   def show
-    @contact = Contact.find(params[:id])
-
-    #if current_user.contacts
-
+    if current_user
+      @contact = Contact.find(params[:id])
+    else new_user
+      redirect_to new_user_path
+    end
   end
 
   def new
-  	@contact = Contact.new
+  	if current_user
+      @contact = Contact.new
+    else new_user
+      redirect_to new_user_path
+    end
   end
 
   def create
-    @contact = Contact.new(contact_params)
-    if @contact.save
-      current_user.contacts.push(@contact)
-      redirect_to action: 'index'
-      flash[:notice] = "successfully created contact!"
-    else
-      render action: 'new'
+    if current_user
+      @contact = Contact.new(contact_params)
+      if @contact.save
+        current_user.contacts.push(@contact)
+        redirect_to action: 'index'
+        flash[:notice] = "successfully created contact!"
+      else
+        render action: 'new'
+      end
+    else new_user
+      redirect_to new_user_path
     end
   end
 
   def edit
-    @contact = Contact.find(params[:id])
+    if current_user
+      @contact = Contact.find(params[:id])
+    else new_user
+      redirect_to new_user_path
+    end
   end
 
    def update

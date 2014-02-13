@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
 
   def index
-    @users = User.all
+    if bigbossman
+      @users = User.all
+    else
+      redirect_to covers_path
+    end
   end
 
   def show
@@ -47,7 +51,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:firstname, :lastname, :email, :username, :password, :phonenumber)
+    params.require(:user).permit(:firstname, :lastname, :email, :username, :password, :phonenumber, :admin)
   end
 
 end
