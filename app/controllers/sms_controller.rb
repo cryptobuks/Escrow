@@ -31,8 +31,13 @@ class SmsController < ApplicationController
           #:body => "#{message_to_send}"
         #)
 
-        flash[:notice] = "Your text has been scheduled!"
+        #flash[:notice] = "Your text has been scheduled!"
+        
+        scheduler = Rufus::Scheduler.new
+        scheduler.in '1m' do
         @sms.send_text_message
+        end
+
         redirect_to sms_path
       
       else
