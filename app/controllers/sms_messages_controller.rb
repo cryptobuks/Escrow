@@ -1,7 +1,7 @@
 class SmsMessagesController < ApplicationController
 
   def index
-    @sms_messages = SmsMessage.all
+    @sms_messages = current_user.sms_messages
   end
 
   def new

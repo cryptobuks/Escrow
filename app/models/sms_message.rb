@@ -5,6 +5,8 @@ class SmsMessage
   field :to, type: String
   field :body, type: String
 
+  belongs_to :user
+
   def send_text_message
  
     twilio_sid = 'AC30ea0b2e26c3293997fbf599981fd28c' #current_user.twilio_sid
@@ -12,7 +14,7 @@ class SmsMessage
     
     sent_to_number = self.to
     sent_from_number = '13239995226' #self.from
-	message_to_send = self.body
+	  message_to_send = self.body
 
     @twilio_client ||= Twilio::REST::Client.new twilio_sid, twilio_token
  

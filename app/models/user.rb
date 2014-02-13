@@ -13,7 +13,7 @@ class User
   field :phonenumber, type: String
 
   has_many :contacts
-  has_many :messages
+  has_many :sms_messages
 
   validates :firstname, presence: true
   validates :lastname, presence: true
