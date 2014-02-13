@@ -12,9 +12,9 @@ resources :contacts
 resources :texts
 resources :sms
 
-root 'sms#new'
-get 'sms/new', to: "sms#new"
-post '/send_text_message' => "sms#send_text_message"
+# root 'sms#new'
+# get 'sms/new', to: "sms#new"
+# post '/send_text_message' => "sms#send_text_message"
 
 resources :auths, only:[:new, :create]
 
