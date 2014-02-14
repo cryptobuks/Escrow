@@ -20,15 +20,16 @@ class SmsMessagesController < ApplicationController
 
     if current_user
 
-      @sms_message = SmsMessage.create(params[:sms_message].permit(:to, :from, :body))
+      @sms_message = SmsMessage.new(params[:sms_message].permit(:to, :from, :body))
 
         if @sms_message.save
 
           scheduler = Rufus::Scheduler.new
-          scheduler.in '1m' do
+          scheduler.in '0m' do
             @sms_message.send_text_message
           end
 
+          current_user.sms_messages.push(@sms_message)
           flash[:notice] = "Your text has been scheduled!"
           redirect_to sms_messages_path
       

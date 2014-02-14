@@ -14,9 +14,6 @@ class User
   field :twilio_sid, type: String
   field :twilio_token, type: String
   field :admin, type: Mongoid::Boolean
-  field :twilio_sid, type: String
-  field :twilio_token, type: String
-  field :twilio_number, type: String
 
   has_many :contacts
   has_many :sms_messages
@@ -25,13 +22,11 @@ class User
   validates :lastname, presence: true
   validates :email, presence: true, uniqueness: true
   validates :username, presence: true, uniqueness: true, length: { minimum: 6 }
-  validates :phonenumber, presence: true, uniqueness: true
 
 
   def authenticated? pwd
     self.hashed_password ==
       BCrypt::Engine.hash_secret(pwd, self.salt)
-      # Replace with BCrypt::Password.new(pwd)
   end
 
   before_save :hash_stuff

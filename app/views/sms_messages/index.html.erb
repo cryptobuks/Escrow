@@ -6,7 +6,7 @@
 	<th>Message Text</th>
 	<th>Sent At</th>
 	</tr>
-	<% if @sms_messages %>
+
 	<% @sms_messages.each do |s| %>
 	<tr>
 	<td><%= number_to_phone(s.from, area_code: true)%>  </td> 
@@ -15,5 +15,6 @@
 	<td><%= s.created_at.to_formatted_s(:long) %></td>
 	</tr>
 	<% end %>
-	<% end %>
 </table>
+
+ <%= link_to 'New message', new_sms_message_path %>
