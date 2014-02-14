@@ -14,9 +14,9 @@ class SmsMessage
     ts = sender.twilio_sid
     tt = sender.twilio_token
     
-    sent_to_number = self.to
+    sent_to_number = to
     sent_from_number = sender.twilio_number
-	  message_to_send = self.body
+	  message_to_send = body
 
     @twilio_client ||= Twilio::REST::Client.new ts, tt
  
