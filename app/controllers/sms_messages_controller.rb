@@ -19,7 +19,7 @@ class SmsMessagesController < ApplicationController
   def create   
     if current_user
 
-      @sms_message = SmsMessage.new(params[:sms_message].permit(:to, :from, :body).merge(user_id:current_user.id))
+      @sms_message = current_user.sms_messages.build(params[:sms_message].permit(:to, :from, :body))
 
         if @sms_message.save
 
