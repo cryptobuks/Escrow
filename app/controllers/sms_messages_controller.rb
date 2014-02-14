@@ -19,10 +19,9 @@ class SmsMessagesController < ApplicationController
   def create   
     if current_user
 
-      @sms_message = SmsMessage.new(params[:sms_message].permit(:to, :from, :body))
+      @sms_message = SmsMessage.new(params[:sms_message].permit(:to, :from, :body).merge(user_id:current_user.id))
 
         if @sms_message.save
-          current_user.sms_messages << @sms_message
 
           # scheduler = Rufus::Scheduler.new
           # scheduler.in '0m' do
