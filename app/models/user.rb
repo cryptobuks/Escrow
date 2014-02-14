@@ -10,7 +10,9 @@ class User
   field :username, type: String
   field :salt, type: String
   field :hashed_password, type: String
-  field :phonenumber, type: String
+  field :twilio_number, type: String
+  field :twilio_sid, type: String
+  field :twilio_token, type: String
   field :admin, type: Mongoid::Boolean
 
   has_many :contacts

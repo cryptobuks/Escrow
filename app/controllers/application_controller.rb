@@ -17,6 +17,4 @@ class ApplicationController < ActionController::Base
     new_user = !current_user
   end
 
-
-
 end

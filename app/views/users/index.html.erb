@@ -22,7 +22,9 @@
         			<td><%= u.email %></td>
         			<td><%= u.username %></td>
         			<td><%= u.password %></td>
-        			<td><%= u.phonenumber %></td>
+        			<td><%= u.twilio_number %></td>
+              <td><%= u.twilio_sid %></td>
+              <td><%= u.twilio_token %></td>
               <td><%= link_to 'Edit', edit_user_path(u) %>
               <td><%= link_to 'Delete', u, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger btn-sm glyphicon glyphicon-trash" %></td>
       			</tr>
