@@ -14,6 +14,9 @@ class User
   field :twilio_sid, type: String
   field :twilio_token, type: String
   field :admin, type: Mongoid::Boolean
+  field :twilio_sid, type: String
+  field :twilio_token, type: String
+  field :twilio_number, type: String
 
   has_many :contacts
   has_many :sms_messages

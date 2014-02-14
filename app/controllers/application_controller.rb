@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
   helper_method :new_user
+  helper_method :admin
 
   # Who is currently logged in, if anyone
   def current_user
@@ -17,4 +18,11 @@ class ApplicationController < ActionController::Base
     new_user = !current_user
   end
 
+<<<<<<< HEAD
+=======
+  def admin
+    User.find_by admin:true
+  end
+
+>>>>>>> f58f690bdc977c8c9c44778836f79542e0f7b354
 end
