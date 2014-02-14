@@ -9,13 +9,13 @@ class SmsMessage
 
   belongs_to :user
 
-  def send_text_message(sender)
+  def send_text_message
     
-    ts = sender.twilio_sid
-    tt = sender.twilio_token
+    ts = self.user.twilio_sid
+    tt = self.user.twilio_token
     
     sent_to_number = to
-    sent_from_number = sender.twilio_number
+    sent_from_number = self.user.twilio_number
 	  message_to_send = body
 
     @twilio_client ||= Twilio::REST::Client.new ts, tt
