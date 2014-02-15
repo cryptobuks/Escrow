@@ -1,5 +1,6 @@
 class SmsMessagesController < ApplicationController
 
+
   def index
     if current_user
       @sms_messages = current_user.sms_messages

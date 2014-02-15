@@ -17,12 +17,13 @@ class AuthsController < ApplicationController
 			if user && user.authenticated?(params[:user][:password])
 				session[:user_id] = user.id
 
-				if session[:redirect]
-					redirect_to session[:redirect]
-					session[:redirect] = nil
-				else
-					redirect_to covers_path
-				end
+				# if session[:redirect]
+				# 	redirect_to session[:redirect]
+				# 	session[:redirect] = nil
+				# else
+				# 	redirect_to covers_path
+				# end
+				redirect_to session.delete(:redirect) || covers_path
 
 			else
 				redirect_to new_auth_path
