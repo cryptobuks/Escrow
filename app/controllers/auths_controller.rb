@@ -14,10 +14,15 @@ class AuthsController < ApplicationController
 	def create
 		# if params[:user][:username].present?
 			user = User.find_by(username: params[:user][:username])
-			
 			if user && user.authenticated?(params[:user][:password])
 				session[:user_id] = user.id
-				redirect_to covers_path
+
+				if session[:redirect]
+					redirect_to session[:redirect]
+					session[:redirect] = nil
+				else
+					redirect_to covers_path
+				end
 
 			else
 				redirect_to new_auth_path

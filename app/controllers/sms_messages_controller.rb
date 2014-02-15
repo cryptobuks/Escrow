@@ -23,10 +23,10 @@ class SmsMessagesController < ApplicationController
 
         if @sms_message.save
 
-          # scheduler = Rufus::Scheduler.new
-          # scheduler.in '0m' do
+          #scheduler = Rufus::Scheduler.new
+          #scheduler.at '2014-02-14 15:35 Pacific Time Zone' do
           @sms_message.send_text_message
-          # end
+          #end
 
           flash[:notice] = "Your text has been scheduled!"
           redirect_to sms_messages_path
