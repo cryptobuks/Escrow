@@ -13,6 +13,7 @@ class User
   field :twilio_number, type: String
   field :twilio_sid, type: String
   field :twilio_token, type: String
+  field :timezone, type: String
   field :admin, type: Mongoid::Boolean
 
   has_many :contacts

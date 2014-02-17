@@ -17,29 +17,35 @@ class SmsMessagesController < ApplicationController
     end
   end
 
-  def create   
+  def create      
     if current_user
 
-      @sms_message = current_user.sms_messages.build(params[:sms_message].permit(:to, :from, :body))
-
-        if @sms_message.save
-
-          #scheduler = Rufus::Scheduler.new
-          #scheduler.at '2014-02-14 15:35 Pacific Time Zone' do
-          @sms_message.send_text_message
-          #end
-
-          flash[:notice] = "Your text has been scheduled!"
-          redirect_to sms_messages_path
+      @sms_message = current_user.sms_messages.build(sms_message_params)
       
-        else
-          render 'new'
-        end
+      if @sms_message.save
+
+        scheduler = Rufus::Scheduler.new
+          scheduler.at @sms_message.set_time do
+            @sms_message.send_text_message
+          end
+
+        flash[:notice] = "Your text has been scheduled!"
+        redirect_to sms_messages_path
+
+      else
+        render 'new'
+      end
 
     else new_user
       redirect_to new_user_path
     end
 
   end
+
+  private
+  
+    def sms_message_params
+      params.require(:sms_message).permit(:from, :to, :body, :month, :day, :year, :timehour, :timeminute, :ampm, :timezone)
+    end
 
 end

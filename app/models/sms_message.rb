@@ -7,7 +7,22 @@ class SmsMessage
   field :to, type: String
   field :body, type: String
 
+  field :year, type: String
+  field :month, type: String
+  field :day, type: String
+  field :timehour, type: String
+  field :timeminute, type: String
+  field :timezone, type: String
+  field :ampm, type: String
+
   belongs_to :user
+
+  def set_time
+
+    year + month + day + " " + timehour + timeminute + " " + ampm + " " + timezone 
+
+  end
+
 
   def send_text_message
     
