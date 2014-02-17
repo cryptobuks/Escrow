@@ -9,6 +9,10 @@ class SmsMessagesController < ApplicationController
     end
   end
 
+  def show
+      @sms_message = SmsMessage.find(params[:id])
+  end
+
   def new
     if current_user
       @sms_message = SmsMessage.new
@@ -24,7 +28,7 @@ class SmsMessagesController < ApplicationController
       
       if @sms_message.save
 
-        scheduler = Rufus::Scheduler.new
+          scheduler = Rufus::Scheduler.new
           scheduler.at @sms_message.set_time do
             @sms_message.send_text_message
           end
@@ -40,6 +44,28 @@ class SmsMessagesController < ApplicationController
       redirect_to new_user_path
     end
 
+  end
+
+  def edit
+    @sms_message = SmsMessage.find(params[:id])
+  end
+
+  def update
+
+    @sms_message = SmsMessage.find(params[:id])
+
+    if @sms_message.update sms_message_params
+      flash[:notice] = "Successfully updated SMS!"
+      redirect_to action: 'index'
+    else
+      render action: 'new'
+    end
+  end
+
+  def destroy
+    s = SmsMessage.find(params[:id])
+    s.destroy
+    redirect_to users_path
   end
 
   private

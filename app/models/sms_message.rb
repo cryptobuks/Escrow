@@ -19,7 +19,7 @@ class SmsMessage
 
   def set_time
 
-    year + month + day + " " + timehour + timeminute + " " + ampm + " " + timezone 
+    year + "-" + month + "-" + day + " " + timehour + ":" + timeminute + " " + ampm + " " + timezone 
 
   end
 

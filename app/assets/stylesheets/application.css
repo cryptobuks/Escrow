@@ -12,3 +12,40 @@
  *= require_tree .
  */
 
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+dt {
+  font-size: 26px;
+}
+
+dd {
+  font-size: 20px;
+}
+
+th {
+  font-size: 20px;
+}
+
+td {
+  font-size: 17px;
+}
+
+.field {
+  font-size: 20px;
+}
+
+.linkfont {
+  font-size: 20px;
+}
+
+body {
+  background-color: grey;
+}

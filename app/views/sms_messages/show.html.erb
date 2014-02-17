@@ -1,0 +1,30 @@
+<body>
+<div class="container">
+<div class="center">
+
+<p id="notice"><%= notice %></p>
+
+<h1><%= @sms_message.to %></h1></br >
+
+<dt>Sent To</dt>
+<dd><%= @sms_message.to %></dd></br >
+
+<dt>Message Body</dt>
+<dd><%= @sms_message.body %></dd></br >
+
+<dt>Scheduled Send Date</dt>
+<dd><%= @sms_message.month %>/<%= @sms_message.day %>/<%= @sms_message.year %></dd></br >
+
+<dt>Scheduled Send Time</dt>
+<dd><%= @sms_message.timehour %>:<%= @sms_message.timeminute %>  <%= @sms_message.ampm %></dd>
+<dd><%= @sms_message.timezone %></dd></br >
+
+
+
+<%= link_to 'Edit', edit_sms_message_path(@sms_message), :class => "linkfont" %></br >
+<%= link_to 'Back to messages', sms_messages_path, :class => "linkfont" %>
+
+
+</div>
+</div>
+</body>

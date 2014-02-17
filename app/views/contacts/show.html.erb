@@ -1,12 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div class = "center">
+<div class = "container">
 
-<%= link_to 'Back to contacts', contacts_path %>
-<h1><%= @contact.name %></h1>
+<h1><%= @contact.name %></h1><br />
 
 <dt>Name</dt>
-<dd><%= @contact.name %></dd>
+<dd><%= @contact.name %></dd><br />
 
 <dt>Phone Number</dt>
-<dd><%= @contact.phonenumber %></dd>
+<dd><%= @contact.phonenumber %></dd><br />
 
-<%= link_to 'Edit', edit_contact_path(@contact) %>
+<%= link_to 'Edit', edit_contact_path(@contact), :class => "linkfont" %><br />
+<%= link_to 'Back to contacts', contacts_path, :class => "linkfont" %>
+
+</div>
+</div>
