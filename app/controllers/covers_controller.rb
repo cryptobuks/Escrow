@@ -1,11 +1,12 @@
 class CoversController < ApplicationController
 
 	def index
-		@users = User.all
 	end
 
-	def new
-		@user = User.new
+	def launch
+	end
+
+	def show
 	end
 
 end

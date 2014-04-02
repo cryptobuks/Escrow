@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/*/
 
+@import "bootstrap";
+
 /*$navbar-default-bg: #312312;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
@@ -19,4 +21,40 @@ $navbar-default-link-color: #f36;*/
 	text-align: center;
 }
 
-@import "bootstrap";
+.btn btn-lg btn-primary welcome {
+	text-align: center;
+}
+
+body {
+	background-color: white;
+}
+
+#top-div {
+	height: 275px;
+	width: 100%;
+	background-color: white;
+	margin-bottom: -125px;
+}
+
+#middle-div {
+	height: 275px;
+	width: 100%;
+	background-color: #437DD4;
+	margin-bottom: -125px;
+}
+
+#bottom-div {
+	height: 275px;
+	width: 100%;
+	background-color: white;
+	margin-bottom: -125px;
+}
+
+#iphone {
+	width: 400px;
+	height: 600px;
+  background-size: cover;
+  background-image: url('iphone.png');
+  position: absolute;
+  bottom: -75px;
+}

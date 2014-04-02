@@ -1,5 +1,8 @@
 Easytexts::Application.routes.draw do
 
+get "covers/index"
+get "covers/launch"
+
 get 'users' => 'users#index', :as => :home_user
 get 'users/:id/edit' => 'users#edit', :as => :edit_user 
 
@@ -16,7 +19,7 @@ delete "auths" => "auths#destroy"
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+   root 'covers#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
