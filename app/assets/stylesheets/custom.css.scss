@@ -1,39 +1,41 @@
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1 {
-  font-size: 50px;
-  text-align: center;
-}
-
-dt {
-  font-size: 26px;
-}
-
-dd {
-  font-size: 20px;
-}
-
-th {
-  font-size: 20px;
-}
-
-td {
-  font-size: 17px;
-}
-
-.field {
-  font-size: 20px;
-}
-
-.linkfont {
-  font-size: 20px;
-}
-
-body {
-  background-color: grey;
-}
-
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/* For New user/edit user page */
+
+#newusercontainer {
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  z-index: 1000;
+  left: 750px;
+  bottom: -215px;
+}
+
+#newusertitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 495px;
+  font-family: 'Lobster', cursive;
+}
+
+#newusericon {
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  z-index: 800;
+  left: 50px;
+  bottom: 10px;
+  background-image: url('newuser.png');
+}
+
+#submitbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 45px;
+  font-family: 'Lobster', cursive;
+}

@@ -1,53 +1,53 @@
+<div class="container" id="newusercontainer">
+
 <%= form_for @user do |u| %>
 
 	<div class="field">
-		<%= u.label :firstname %>
-		<%= u.text_field :firstname %>
+		<%= u.text_field :firstname, placeholder: 'First Name' %>
 	</div>
+
+	<br />
 
 	<div class="field">
-		<%= u.label :lastname %>
-		<%= u.text_field :lastname %>
+		<%= u.text_field :lastname, placeholder: 'Last Name' %>
 	</div>
+
+	<br />
 
 	<div class="field">
-		<%= u.label :email %>
-		<%= u.text_field :email %>
+		<%= u.text_field :email, placeholder: 'E-Mail' %>
 	</div>
+
+	<br />
 
 	<div class="field">
-		<%= u.label :username %>
-		<%= u.text_field :username %>
+		<%= u.password_field :password, placeholder: 'Password' %>
 	</div>
+
+	<br />
 
 	<div class="field">
-	<%= u.label :password %>
-	<%= u.password_field :password %>
+		<%= u.text_field :twilio_number, placeholder: 'Twilio Phone Number' %>
 	</div>
+
+	<br />
 
 	<div class="field">
-		<%= u.label :twilio_number %>
-		<%= u.text_field :twilio_number %>
+		<%= u.text_field :twilio_sid, placeholder: 'Twilio SID' %>
 	</div>
 
-	<div class="field">
-		<%= u.label :twilio_sid %>
-		<%= u.text_field :twilio_sid %>
+	<br />
+
+	<div class="field" placeholder="Twilio Token">
+		<%= u.text_field :twilio_token, placeholder: 'Twilio Token' %>
 	</div>
 
-	<div class="field">
-		<%= u.label :twilio_token %>
-		<%= u.text_field :twilio_token %>
+	<br />
+
+	<div id="submitbutton">
+		<%= u.submit 'Create User', class: 'btn btn-default'%>
 	</div>
 
-	<div class="field">
-		<%= u.label :admin %>
-		<%= u.check_box :admin %>
-	</div>
-
-	<div>
-		<%= u.submit %>
-	</div>
-</form>
+</div>
 
 <% end %>
