@@ -1,10 +1,21 @@
+<%= render partial: 'layouts/nav' %>
+
+<h1 id="logintitle">Log In</h1>
+
+<div id="loginicon">
+</div>
+
+<div class="container" id="userlogincontainer">
+
 <p id="notice"><%= notice %></p>
 
 <div class="login">
-	<h1>Log In</h1>
 	<%= form_for @user, {url:"/auths", method:"post"} do |u|%>
-	<%= u.text_field :username, :placeholder => "Your username" %><br>
-	<%= u.password_field :password, :placeholder => "Your password" %><br>
-	<%= u.submit "Log In" %>
+	<%= u.text_field :email, :placeholder => "E-Mail", :class => 'field' %><br /><br />
+	<%= u.password_field :password, :placeholder => "Password", :class => 'field' %><br /><br />
+	<div id="submitloginbutton">
+		<%= u.submit "Log In", class: 'btn btn-default' %>
 	<% end %>
+</div>
+
 </div>

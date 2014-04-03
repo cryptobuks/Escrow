@@ -36,7 +36,7 @@
   width: 100px;
   position: absolute;
   z-index: 600;
-  left: 45px;
+  left: 65px;
   font-family: 'Lobster', cursive;
 }
 
@@ -46,4 +46,44 @@
 
 .field {
   border: solid 2px black;
+}
+
+/* For user login page */
+
+#userlogincontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 300px;
+  bottom: -270px;
+}
+
+#logintitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 800;
+  left: 550px;
+  font-family: 'Lobster', cursive;
+}
+
+#loginicon {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 550px;
+  bottom: 0px;
+  background-image: url('loginkey.png');
+  background-size: cover;
+}
+
+#submitloginbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 60px;
+  font-family: 'Lobster', cursive;
 }

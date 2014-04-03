@@ -22,7 +22,6 @@ class User
   validates :firstname, presence: true
   validates :lastname, presence: true
   validates :email, presence: true, uniqueness: true
-  validates :username, presence: true, uniqueness: true, length: { minimum: 6 }
 
 
   def authenticated? pwd

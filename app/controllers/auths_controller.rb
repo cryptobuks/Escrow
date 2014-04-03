@@ -13,7 +13,7 @@ class AuthsController < ApplicationController
 	# Log them in!
 	def create
 		# if params[:user][:username].present?
-			user = User.find_by(username: params[:user][:username])
+			user = User.find_by(email: params[:user][:email])
 			if user && user.authenticated?(params[:user][:password])
 				session[:user_id] = user.id
 
@@ -27,7 +27,7 @@ class AuthsController < ApplicationController
 
 			else
 				redirect_to new_auth_path
-				flash[:notice] = "username and/or password is invalid"
+				flash[:notice] = "e-mail and/or password is invalid"
 			end
 		# else
 			# redirect_to new_auth_path
