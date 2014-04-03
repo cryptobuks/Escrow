@@ -1,18 +1,15 @@
-<center><h1>Users</h1></center>
+<%= render partial: 'layouts/nav' %>
 
-<body>
+<h1 id = "userindextitle">Users</h1>
+
+<div id="userlistcontainer">
 
 	<table class="table table-hover">
   		<thead>
-    			<tr>
+    			<tr id = "usertablelabels">
       				<th>First Name</th>
       				<th>Last Name</th>
       				<th>E-Mail</th>
-      				<th>New Username</th>
-      				<th>Desired Password</th>
-      				<th>Twilio Number</th>
-              <th>Twilio Sid</th>
-              <th>Twilio Token</th>
     			</tr>
   		</thead>
 
@@ -22,16 +19,10 @@
         			<td><%= u.firstname %></td>
         			<td><%= u.lastname %></td>
         			<td><%= u.email %></td>
-        			<td><%= u.username %></td>
-        			<td><%= u.password %></td>
-        			<td><%= u.twilio_number %></td>
-              <td><%= u.twilio_sid %></td>
-              <td><%= u.twilio_token %></td>
-              <td><%= link_to 'Edit', edit_user_path(u) %>
-              <td><%= link_to 'Delete', u, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger btn-sm glyphicon glyphicon-trash" %></td>
+              <td><%= link_to 'Edit', edit_user_path(u), :class => "btn btn-default glyphicon glyphicon-user" %>
+              <td><%= link_to 'Delete', u, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger glyphicon glyphicon-trash" %></td>
       			</tr>
     	<% end %>
   		</tbody>
 	</table>
-
-   <%= link_to 'New user', new_user_path %>
+</div>

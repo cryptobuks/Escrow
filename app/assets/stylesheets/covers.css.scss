@@ -15,6 +15,11 @@
 	background-color: #437DD4;
 }
 
+nav {
+	position: absolute;
+	z-index: 1300;
+}
+
 /* For the launch page */
 
 #signupbutton {
@@ -121,7 +126,7 @@
 
 #sendsmsbutton {
 	position: absolute;
-	z-index: 700;
+	z-index: 1100;
 	left: 240px;
 	bottom: 50px;
 	border: 2px solid black;

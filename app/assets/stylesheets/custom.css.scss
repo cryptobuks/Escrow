@@ -36,7 +36,7 @@
   width: 100px;
   position: absolute;
   z-index: 600;
-  left: 65px;
+  left: 70px;
   font-family: 'Lobster', cursive;
 }
 
@@ -85,5 +85,29 @@
   position: absolute;
   z-index: 600;
   left: 60px;
+  font-family: 'Lobster', cursive;
+}
+
+/* For User index page */
+
+#userindextitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 495px;
+  font-family: 'Lobster', cursive;
+}
+
+#userlistcontainer {
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  z-index: 1000;
+  left: 200px;
+  bottom: -200px;
+}
+
+#usertablelabels {
   font-family: 'Lobster', cursive;
 }
