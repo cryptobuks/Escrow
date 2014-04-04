@@ -23,7 +23,6 @@ class SmsMessage
 
   end
 
-
   def send_text_message
     
     ts = self.user.twilio_sid

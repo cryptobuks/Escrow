@@ -1,16 +1,24 @@
-<div class = "center">
-<div class = "container">
+<%= render partial: 'layouts/nav' %>
 
-<h1><%= @contact.name %></h1><br />
+<div id="newcontactshowicon">
+</div>
 
-<dt>Name</dt>
-<dd><%= @contact.name %></dd><br />
+<div id="showcontactcontainer">
 
-<dt>Phone Number</dt>
+<h1 id="showcontactname"><%= @contact.firstname %></h1><br />
+
+<dt class="showcontactfont">First Name</dt>
+<dd><%= @contact.firstname %></dd><br />
+
+<dt class="showcontactfont">Last Name</dt>
+<dd><%= @contact.lastname %></dd><br />
+
+<dt class="showcontactfont">Phone Number</dt>
 <dd><%= @contact.phonenumber %></dd><br />
 
-<%= link_to 'Edit', edit_contact_path(@contact), :class => "linkfont" %><br />
-<%= link_to 'Back to contacts', contacts_path, :class => "linkfont" %>
+<%= link_to 'Edit', edit_contact_path(@contact), :class => "btn btn-default glyphicon glyphicon-user" %><br /><br />
+<%= link_to 'Back to Contacts', contacts_path, :class => "btn btn-default" %>
 
-</div>
+
+
 </div>

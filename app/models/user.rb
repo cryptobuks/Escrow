@@ -7,7 +7,6 @@ class User
   field :firstname, type: String
   field :lastname, type: String
   field :email, type: String
-  field :username, type: String
   field :salt, type: String
   field :hashed_password, type: String
   field :twilio_number, type: String

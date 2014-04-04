@@ -1,16 +1,28 @@
+<div class="container" id="newcontactcontainer">
+
 <%= form_for @contact do |c| %>
 	<div class="field">
-		<%= c.label :name %>
-		<%= c.text_field :name %>
+		<%= c.text_field :firstname, placeholder: 'First Name' %>
 	</div>
 
+	<br />
+
 	<div class="field">
-		<%= c.label :phonenumber %>
-		<%= c.text_field :phonenumber %>
+		<%= c.text_field :lastname, placeholder: 'Last Name' %>
 	</div>
+
+	<br />
+
+	<div class="field">
+		<%= c.text_field :phonenumber, placeholder: 'Phone Number' %>
+	</div>
+
+	<br />
 
 	<div>
 		<%= c.submit %>
 	</div>
+
+</div>
 
 <% end %>
