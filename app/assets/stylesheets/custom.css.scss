@@ -204,3 +204,88 @@
 .showcontactfont {
   font-family: 'Lobster', cursive;
 }
+
+/* This is for the Message Index Page */
+
+#messageindextitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 440px;
+  font-family: 'Lobster', cursive;
+}
+
+#messagelistcontainer {
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  z-index: 1000;
+  left: 200px;
+  bottom: -200px;
+}
+
+#messagetablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the Message Show Page */
+
+#showmessagecontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 250px;
+  bottom: -120px;
+}
+
+#newmessageshowicon {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  z-index: 800;
+  left: 500px;
+  bottom: 20px;
+  background-size: cover;
+  background-image: url('showmessage.png');
+}
+
+#showmessagename {
+  font-family: 'Lobster', cursive;
+}
+
+.showmessagefont {
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the New Message Page */
+
+#newmessagetitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 440px;
+  font-family: 'Lobster', cursive;
+}
+
+#newmessageicon {
+  height: 375px;
+  width: 375px;
+  position: absolute;
+  z-index: 800;
+  left: 200px;
+  bottom: 25px;
+  background-image: url('sendtexticon.png');
+  background-size: cover;
+}
+
+#newmessagecontainer {
+  height: 500px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 675px;
+  bottom: -150px;
+}

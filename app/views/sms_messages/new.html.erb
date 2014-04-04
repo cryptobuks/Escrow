@@ -1,7 +1,8 @@
-<div class="container">
-<%= render 'form' %></br></br>
+<%= render partial: 'layouts/nav' %>
 
-<div class="center">
-<%= link_to 'Back', sms_messages_path, :class => "linkfont" %>
+<h1 id="newmessagetitle">Send a Text!</h1>
+
+<div id="newmessageicon">
 </div>
-</div>
+
+<%= render 'form' %></br></br>

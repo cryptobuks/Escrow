@@ -1,23 +1,27 @@
-<h1>Texts</h1>
+<%= render partial: 'layouts/nav' %>
 
-<p id="notice"><%= notice %></p>
+<h1 id="messageindextitle">Scheduled Messages</h1>
 
-<table class="table table-striped">
-	<tr>
-	<th>To</th>
-	<th>Message Text</th>
-	<th>Sent At</th>
-	</tr>
+<div id="messagelistcontainer">
 
-	<% @sms_messages.each do |s| %>
-	<tr>
-	<td><%= number_to_phone(s.to, area_code: true)%> </td> 
-	<td><%= s.body %> </td>
-	<td><%= s.created_at.to_formatted_s(:long) %></td>
-	<td><%= link_to 'Edit', s, action: 'edit', :class => "btn btn-default btn-warning btn-sm glyphicon glyphicon-edit" %></td>
-  <td><%= link_to '', s, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger btn-sm glyphicon glyphicon-trash" %></td>
-	</tr>
-	<% end %>
-</table>
+	<table class="table table-hover">
+		<thead>
+			<tr id="messagetablelabels">
+				<th>To</th>
+				<th>Message Text</th>
+				<th>Sent At</th>
+			</tr>
+		</thead>
 
- <%= link_to 'New message', new_sms_message_path %>
+		<% @sms_messages.each do |s| %>
+			<tr>
+				<td><%= number_to_phone(s.to, area_code: true)%> </td> 
+				<td><%= s.body %> </td>
+				<td><%= s.created_at.to_formatted_s(:long) %></td>
+				<td><%= link_to 'Edit', s, action: 'edit', :class => "btn btn-default glyphicon glyphicon-user" %></td>
+  			<td><%= link_to 'Delete', s, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger glyphicon glyphicon-trash" %></td>
+			</tr>
+		<% end %>
+	</table>
+
+</div>
