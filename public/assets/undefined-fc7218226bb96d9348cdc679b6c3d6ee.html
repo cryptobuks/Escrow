@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://0.0.0.0:3000/users/new -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/application.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://0.0.0.0:3000/assets/covers.css?body=1" media="all" rel="stylesheet">
+  <script data-turbolinks-track="true" src="./undefined_files/jquery.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/jquery_ujs.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/turbolinks.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/affix.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/alert.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/button.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/carousel.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/collapse.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/dropdown.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/tab.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/transition.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/scrollspy.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/modal.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/tooltip.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/popover.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/bootstrap.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/covers.js"></script>
+<script data-turbolinks-track="true" src="./undefined_files/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="sHH1sFOLefxFMrXRaN3f+nzDFIKfSCkZZJxxt3BEHCA=" name="csrf-token">
+<title>undefined</title></head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://0.0.0.0:3000/covers">EasyText</a>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navlist">
+      <ul class="nav navbar-nav">
+        <li><a href="http://0.0.0.0:3000/contacts">Contacts</a></li>
+        <li><a href="http://0.0.0.0:3000/sms_messages">Messages</a></li>
+        <li class="active">logged out 
+
+  <form action="http://0.0.0.0:3000/auths" class="button_to" method="post"><div><input name="_method" type="hidden" value="delete"><input type="submit" value="Log out"><input name="authenticity_token" type="hidden" value="sHH1sFOLefxFMrXRaN3f+nzDFIKfSCkZZJxxt3BEHCA="></div></form></li>
+    </ul></div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid --> 
+</nav>
+
+<div class="container">
+<h1>New User</h1>
+
+<form accept-charset="UTF-8" action="http://0.0.0.0:3000/users" class="new_user" id="new_user" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="sHH1sFOLefxFMrXRaN3f+nzDFIKfSCkZZJxxt3BEHCA="></div>
+
+	<div class="field">
+		<label for="user_firstname">Firstname</label>
+		<input id="user_firstname" name="user[firstname]" type="text">
+	</div>
+
+	<div class="field">
+		<label for="user_lastname">Lastname</label>
+		<input id="user_lastname" name="user[lastname]" type="text">
+	</div>
+
+	<div class="field">
+		<label for="user_email">Email</label>
+		<input id="user_email" name="user[email]" type="text">
+	</div>
+
+	<div class="field">
+		<label for="user_username">Username</label>
+		<input id="user_username" name="user[username]" type="text">
+	</div>
+
+	<div class="field">
+	<label for="user_password">Password</label>
+	<input id="user_password" name="user[password]" type="password">
+	</div>
+
+
+	<div class="field">
+		<label for="user_twilio_number">Twilio number</label>
+		<input id="user_twilio_number" name="user[twilio_number]" type="text">
+	</div>
+
+	<div class="field">
+		<label for="user_twilio_sid">Twilio sid</label>
+		<input id="user_twilio_sid" name="user[twilio_sid]" type="text">
+	</div>
+
+	<div class="field">
+		<label for="user_twilio_token">Twilio token</label>
+		<input id="user_twilio_token" name="user[twilio_token]" type="text">
+	</div>
+
+	<div class="field">
+		<label for="user_admin">Admin</label>
+		<input name="user[admin]" type="hidden" value="0"><input id="user_admin" name="user[admin]" type="checkbox" value="1">
+	</div>
+
+	<div>
+		<input name="commit" type="submit" value="Create User">
+	</div>
+</form>
+
+
+</div>
+
+
+
+</body></html>
