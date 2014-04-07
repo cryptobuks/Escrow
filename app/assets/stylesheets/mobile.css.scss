@@ -1,0 +1,55 @@
+/* Extra Small devices (mobiles, 320px and up) */
+@media (min-width: 320px) and (max-width: 767px) {
+
+#signupbutton {
+  position: absolute;
+  z-index: 700;
+  left: 625px;
+  bottom: 50px;
+  font-family: 'Lobster', cursive;
+  border: 2px solid black;
+}
+
+#loginbutton {
+  position: absolute;
+  z-index: 700;
+  left: 825px;
+  bottom: 50px;
+  font-family: 'Lobster', cursive;
+  border: 2px solid black;
+}
+
+.background {
+  background-color: #437DD4;
+}
+
+#iphone {
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+  background-image: url('iphone.png');
+  position: absolute;
+  z-index: 1000;
+  bottom: -75px;
+}
+
+#title {
+  width: 500px;
+  height: 200px;
+  font-family: 'Lobster', cursive;
+  font-size: 160px;
+  position: absolute;
+  z-index: 900;
+  left: 550px;
+  bottom: 415px;
+}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1920px) {}

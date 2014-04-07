@@ -20,6 +20,12 @@ nav {
 	z-index: 1300;
 }
 
+#navbartitle {
+	font-family: 'Lobster', cursive;
+	color: white;
+	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+}
+
 /* For the launch page */
 
 #signupbutton {
@@ -88,6 +94,8 @@ nav {
 	z-index: 800;
 	left: 550px;
 	bottom: 65px;
+	color: white;
+	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
 }
 
 /* For the index page */

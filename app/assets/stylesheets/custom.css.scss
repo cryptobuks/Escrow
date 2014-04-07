@@ -132,6 +132,15 @@
   bottom: -200px;
 }
 
+#createcontactbutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
+
 #contacttablelabels {
   font-family: 'Lobster', cursive;
 }
@@ -226,6 +235,15 @@
 }
 
 #messagetablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
   font-family: 'Lobster', cursive;
 }
 
