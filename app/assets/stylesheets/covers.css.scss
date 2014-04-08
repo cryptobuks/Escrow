@@ -5,6 +5,8 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
+@media only screen and (min-width : 481px) {
+
 /* For the navbar */
 
 .navbar-collapse {
@@ -139,5 +141,135 @@ nav {
 	bottom: 50px;
 	border: 2px solid black;
 	font-family: 'Lobster', cursive;
+}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+/* For the navbar */
+
+#navcontainer {
+	background-color: #437DD4;
+	height: 75px;
+}
+
+
+nav {
+	position: absolute;
+	z-index: 1300;
+	width: 480px;
+	height: 50px;
+	display: inline-block;
+}
+
+#navbartitle {
+	font-family: 'Lobster', cursive;
+	color: white;
+	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+	position: absolute;
+	z-index: 1400;
+	bottom: 0px;
+	left: 110px;
+}
+
+#dropdownnav {
+	position: absolute;
+	z-index: 1400;
+	bottom: -24.5px;
+	left: 280px;
+}
+
+.nav navbar-nav
+{
+	display: inline-block;
+}
+
+/* For the Launch Page */
+
+#signupbutton {
+	position: absolute;
+	z-index: 700;
+	font-family: 'Lobster', cursive;
+	border: 2px solid black;
+	bottom: 50px;
+	left: 50px;
+}
+
+#loginbutton {
+	position: absolute;
+	z-index: 700;
+	font-family: 'Lobster', cursive;
+	border: 2px solid black;
+	bottom: 50px;
+	left: 210px;
+}
+
+.background {
+	background-color: #437DD4;
+}
+
+#iphone {
+	width: 300px;
+	height: 400px;
+  background-size: cover;
+  background-image: url('iphone.png');
+  position: absolute;
+  z-index: 1000;
+  bottom: 50px;
+}
+
+#title {
+	width: 100px;
+	height: 50px;
+	font-family: 'Lobster', cursive;
+	font-size: 80px;
+	position: absolute;
+	z-index: 900;
+	left: 75px;
+	color: white;
+	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+}
+
+#description {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	left: -500px;
+}
+
+/* For the index page */
+
+#appexplanationtitle {
+	width: 300px;
+	height: 50px;
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+	position: absolute;
+	z-index: 900;
+	left: 45px;
+	bottom: 430px;
+}
+
+#appexplanation {
+	width: 250px;
+	height: 300px;
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+	position: absolute;
+	z-index: 800;
+	bottom: 90px;
+	left: 70px;
+}
+
+#sendsmsbutton {
+	position: absolute;
+	z-index: 1100;
+	border: 2px solid black;
+	font-family: 'Lobster', cursive;
+	bottom: 50px;
+	left: 100px;
+}
+
 }
 

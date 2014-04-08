@@ -1,17 +1,5 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid" id="navcontainer">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
           <a href="<%= covers_path %>">
@@ -22,10 +10,10 @@
         </li>
         <li>
         <h1 id="navbartitle">&nbsp;&nbsp;&nbsp;Escrow</h1>
-      </li>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
+        <li class="dropdown" id="dropdownnav">
           <a class="dropdown-toggle" data-toggle="dropdown">
             <button type="button" class="btn btn-default btn-lg">
               <span class="glyphicon glyphicon-align-justify"></span>
@@ -41,6 +29,5 @@
           </ul>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div>
 </nav>
