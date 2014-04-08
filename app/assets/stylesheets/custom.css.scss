@@ -8,7 +8,7 @@
 #newusercontainer {
   height: 600px;
   width: 193px;
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   left: 750px;
   bottom: -215px;
@@ -309,6 +309,33 @@
   left: 675px;
   bottom: -150px;
 }
+
+#sendmessagebutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 30px;
+  bottom: 180px;
+  font-family: 'Lobster', cursive;
+}
+
+#messagetime {
+  height: 100px;
+  width: 193px;
+  position: absolute;
+  z-index: 700;
+  left: 15px;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
@@ -319,17 +346,17 @@
   width: 193px;
   position: absolute;
   z-index: 1000;
-  bottom: -210px;
-  left: 85px;
+  bottom: -200px;
+  left: 60px;
 }
 
 #newusertitle {
   height: 100px;
-  width: 500px;
+  width: 350px;
   position: absolute;
   z-index: 900;
   font-family: 'Lobster', cursive;
-  left: 115px;
+  left: 90px;
   bottom: 360px;
 }
 
@@ -338,15 +365,11 @@
   width: 100px;
   position: absolute;
   z-index: 600;
-  left: 70px;
+  left: 60px;
   font-family: 'Lobster', cursive;
 }
 
 .btn {
-  border: solid 2px black;
-}
-
-.field {
   border: solid 2px black;
 }
 
@@ -392,22 +415,36 @@
 
 /* For User index page */
 
+thead {
+  width: 350px;
+  font-size: 7px;
+}
+
+tbody {
+  width: 350px;
+  font-size: 7px;
+}
+
+#userbutton {
+  font-size: 7px;
+}
+
 #userindextitle {
-  height: 100px;
-  width: 500px;
+  height: 100%;
+  width: 350px;
   position: absolute;
   z-index: 900;
-  left: 495px;
   font-family: 'Lobster', cursive;
+  left: 120px;
 }
 
 #userlistcontainer {
   height: 100%;
-  width: 800px;
+  width: 100px;
   position: absolute;
   z-index: 1000;
-  left: 200px;
-  bottom: -200px;
+  left: 10px;
+  bottom: -150px;
 }
 
 #usertablelabels {
@@ -417,28 +454,30 @@
 /* For Contact index page */
 
 #contactindextitle {
-  height: 100px;
-  width: 500px;
+  height: 100%;
+  width: 350px;
   position: absolute;
   z-index: 900;
-  left: 495px;
+  left: 100px;
+  bottom: -120px;
   font-family: 'Lobster', cursive;
 }
 
 #contactlistcontainer {
-  height: 100%;
-  width: 800px;
+  height: 300px;
+  width: 100px;
   position: absolute;
   z-index: 1000;
-  left: 200px;
-  bottom: -200px;
+  left: 30px;
+  bottom: 100px;
 }
 
 #createcontactbutton {
   position: absolute;
   z-index: 1100;
-  left: 700px;
-  bottom: 360px;
+  left: 0px;
+  bottom: -30px;
+  left: 10px;
   border: 2px solid black;
   font-family: 'Lobster', cursive;
 }
@@ -454,27 +493,18 @@
   width: 193px;
   position: absolute;
   z-index: 1000;
-  left: 850px;
   bottom: -275px;
+  left: 70px;
 }
 
 #newcontacttitle {
   height: 100px;
-  width: 500px;
+  width: 200px;
   position: absolute;
   z-index: 900;
-  left: 495px;
   font-family: 'Lobster', cursive;
-}
-
-#newcontacticon {
-  height: 500px;
-  width: 800px;
-  position: absolute;
-  z-index: 800;
-  left: 100px;
-  bottom: 80px;
-  background-image: url('addcontact.png');
+  bottom: 350px;
+  left: 70px;
 }
 
 #submitcontactbutton {
@@ -493,19 +523,8 @@
   width: 193px;
   position: absolute;
   z-index: 1000;
-  left: 250px;
+  left: 105px;
   bottom: -160px;
-}
-
-#newcontactshowicon {
-  height: 450px;
-  width: 450px;
-  position: absolute;
-  z-index: 800;
-  left: 500px;
-  bottom: 20px;
-  background-size: cover;
-  background-image: url('showuser.png');
 }
 
 #showcontactname {
@@ -520,20 +539,21 @@
 
 #messageindextitle {
   height: 100px;
-  width: 500px;
+  width: 350px;
   position: absolute;
   z-index: 900;
-  left: 440px;
   font-family: 'Lobster', cursive;
+  left: 15px;
+  bottom: 360px;
 }
 
 #messagelistcontainer {
-  height: 100%;
-  width: 800px;
+  height: 300px;
+  width: 100px;
   position: absolute;
   z-index: 1000;
-  left: 200px;
-  bottom: -200px;
+  bottom: 110px;
+  left: 10px;
 }
 
 #messagetablelabels {
@@ -543,10 +563,10 @@
 #createmessagebutton {
   position: absolute;
   z-index: 1100;
-  left: 700px;
-  bottom: 360px;
   border: 2px solid black;
   font-family: 'Lobster', cursive;
+  left: 0px;
+  bottom: -25px;
 }
 
 /* This is for the Message Show Page */
@@ -556,19 +576,8 @@
   width: 193px;
   position: absolute;
   z-index: 1000;
-  left: 250px;
-  bottom: -120px;
-}
-
-#newmessageshowicon {
-  height: 450px;
-  width: 450px;
-  position: absolute;
-  z-index: 800;
-  left: 500px;
-  bottom: 20px;
-  background-size: cover;
-  background-image: url('showmessage.png');
+  left: 75px;
+  bottom: -125px;
 }
 
 #showmessagename {
@@ -583,22 +592,12 @@
 
 #newmessagetitle {
   height: 100px;
-  width: 500px;
+  width: 300px;
   position: absolute;
   z-index: 900;
-  left: 440px;
   font-family: 'Lobster', cursive;
-}
-
-#newmessageicon {
-  height: 375px;
-  width: 375px;
-  position: absolute;
-  z-index: 800;
-  left: 200px;
-  bottom: 25px;
-  background-image: url('sendtexticon.png');
-  background-size: cover;
+  left: 70px;
+  bottom: 350px;
 }
 
 #newmessagecontainer {
@@ -606,7 +605,34 @@
   width: 193px;
   position: absolute;
   z-index: 1000;
-  left: 675px;
-  bottom: -150px;
+  left: 63px;
+  bottom: -120px;
+}
+
+#sendmessagebutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 30px;
+  bottom: 180px;
+  font-family: 'Lobster', cursive;
+}
+
+#messagetime {
+  height: 100px;
+  width: 193px;
+  position: absolute;
+  z-index: 700;
+  left: 15px;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
 }
 }

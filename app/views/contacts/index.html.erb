@@ -19,8 +19,8 @@
         			<td><%= c.firstname %></td>
               <td><%= c.lastname %></td>
         			<td><%= c.phonenumber %></td>
-              <td><%= link_to 'Edit', c, action: 'edit', :class => "btn btn-default glyphicon glyphicon-user" %></td>
-              <td><%= link_to 'Delete', c, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger glyphicon glyphicon-trash" %></td>
+              <td><%= link_to 'Edit', c, action: 'edit', :class => "btn btn-default glyphicon glyphicon-user", :id => "userbutton" %></td>
+              <td><%= link_to '', c, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger glyphicon glyphicon-trash", :id => "userbutton" %></td>
       			</tr>
     	<% end %>
   		</tbody>

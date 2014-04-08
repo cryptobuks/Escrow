@@ -5,7 +5,7 @@
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
-@media only screen and (min-width : 481px) {
+@media only screen and (min-width : 569px) {
 
 /* For the navbar */
 
@@ -130,14 +130,14 @@ nav {
 	font-size: 35px;
 	position: absolute;
 	z-index: 800;
-	right: 550px;
+	right: 530px;
 	bottom: 30px;
 }
 
 #sendsmsbutton {
 	position: absolute;
 	z-index: 1100;
-	left: 240px;
+	left: 220px;
 	bottom: 50px;
 	border: 2px solid black;
 	font-family: 'Lobster', cursive;
@@ -145,7 +145,7 @@ nav {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 568px) {
 
 /* For the navbar */
 
@@ -158,7 +158,7 @@ nav {
 nav {
 	position: absolute;
 	z-index: 1300;
-	width: 480px;
+	width: 350px;
 	height: 50px;
 	display: inline-block;
 }
@@ -169,15 +169,15 @@ nav {
 	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
 	position: absolute;
 	z-index: 1400;
-	bottom: 0px;
-	left: 110px;
+	bottom: 7px;
+	left: 85px;
 }
 
 #dropdownnav {
 	position: absolute;
 	z-index: 1400;
 	bottom: -24.5px;
-	left: 280px;
+	left: 235px;
 }
 
 .nav navbar-nav
@@ -193,7 +193,7 @@ nav {
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
 	bottom: 50px;
-	left: 50px;
+	left: 40px;
 }
 
 #loginbutton {
@@ -202,7 +202,7 @@ nav {
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
 	bottom: 50px;
-	left: 210px;
+	left: 180px;
 }
 
 .background {
@@ -217,6 +217,7 @@ nav {
   position: absolute;
   z-index: 1000;
   bottom: 50px;
+  left: -20px;
 }
 
 #title {
@@ -226,7 +227,7 @@ nav {
 	font-size: 80px;
 	position: absolute;
 	z-index: 900;
-	left: 75px;
+	left: 50px;
 	color: white;
 	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
 }
@@ -247,7 +248,7 @@ nav {
 	font-size: 45px;
 	position: absolute;
 	z-index: 900;
-	left: 45px;
+	left: 30px;
 	bottom: 430px;
 }
 
@@ -259,7 +260,7 @@ nav {
 	position: absolute;
 	z-index: 800;
 	bottom: 90px;
-	left: 70px;
+	left: 50px;
 }
 
 #sendsmsbutton {
@@ -268,7 +269,7 @@ nav {
 	border: 2px solid black;
 	font-family: 'Lobster', cursive;
 	bottom: 50px;
-	left: 100px;
+	left: 75px;
 }
 
 }

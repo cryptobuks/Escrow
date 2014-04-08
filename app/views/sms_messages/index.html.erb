@@ -18,8 +18,8 @@
 				<td><%= number_to_phone(s.to, area_code: true)%> </td> 
 				<td><%= s.body %> </td>
 				<td><%= s.created_at.to_formatted_s(:long) %></td>
-				<td><%= link_to 'Edit', s, action: 'edit', :class => "btn btn-default glyphicon glyphicon-user" %></td>
-  			<td><%= link_to 'Delete', s, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger glyphicon glyphicon-trash" %></td>
+				<td><%= link_to 'Edit', s, action: 'edit', :class => "btn btn-default glyphicon glyphicon-user", :id => "userbutton" %></td>
+  			<td><%= link_to '', s, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default btn-danger glyphicon glyphicon-trash", :id => "userbutton" %></td>
 			</tr>
 		<% end %>
 	</table>

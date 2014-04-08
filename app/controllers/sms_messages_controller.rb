@@ -65,7 +65,7 @@ class SmsMessagesController < ApplicationController
   def destroy
     s = SmsMessage.find(params[:id])
     s.destroy
-    redirect_to users_path
+    redirect_to sms_messages_path
   end
 
   private
