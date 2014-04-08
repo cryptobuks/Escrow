@@ -271,6 +271,644 @@ nav {
 	bottom: 50px;
 	left: 75px;
 }
+}
 
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+@media only screen and (min-width:481px) {
+
+/* For New user/edit user page */
+
+#newusercontainer {
+  height: 600px;
+  width: 193px;
+  position: fixed;
+  z-index: 1000;
+  left: 750px;
+  bottom: -215px;
+}
+
+#newusertitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 495px;
+  font-family: 'Lobster', cursive;
+}
+
+#newusericon {
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  z-index: 800;
+  left: 50px;
+  bottom: 10px;
+  background-image: url('newuser.png');
+}
+
+#submitbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 70px;
+  font-family: 'Lobster', cursive;
+}
+
+.btn {
+  border: solid 2px black;
+}
+
+.field {
+  border: solid 2px black;
+}
+
+/* For user login page */
+
+#userlogincontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 300px;
+  bottom: -270px;
+}
+
+#logintitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 800;
+  left: 550px;
+  font-family: 'Lobster', cursive;
+}
+
+#loginicon {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 550px;
+  bottom: 0px;
+  background-image: url('loginkey.png');
+  background-size: cover;
+}
+
+#submitloginbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 60px;
+  font-family: 'Lobster', cursive;
+}
+
+/* For User index page */
+
+#userindextitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 495px;
+  font-family: 'Lobster', cursive;
+}
+
+#userlistcontainer {
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  z-index: 1000;
+  left: 200px;
+  bottom: -200px;
+}
+
+#usertablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+/* For Contact index page */
+
+#contactindextitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 495px;
+  font-family: 'Lobster', cursive;
+}
+
+#contactlistcontainer {
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  z-index: 1000;
+  left: 200px;
+  bottom: -200px;
+}
+
+#createcontactbutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
+
+#contacttablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+/* For New/Edit Contact page */
+
+#newcontactcontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 850px;
+  bottom: -275px;
+}
+
+#newcontacttitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 495px;
+  font-family: 'Lobster', cursive;
+}
+
+#newcontacticon {
+  height: 500px;
+  width: 800px;
+  position: absolute;
+  z-index: 800;
+  left: 100px;
+  bottom: 80px;
+  background-image: url('addcontact.png');
+}
+
+#submitcontactbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 70px;
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the Contact Show Page */
+
+#showcontactcontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 250px;
+  bottom: -160px;
+}
+
+#newcontactshowicon {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  z-index: 800;
+  left: 500px;
+  bottom: 20px;
+  background-size: cover;
+  background-image: url('showuser.png');
+}
+
+#showcontactname {
+  font-family: 'Lobster', cursive;
+}
+
+.showcontactfont {
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the Message Index Page */
+
+#messageindextitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 440px;
+  font-family: 'Lobster', cursive;
+}
+
+#messagelistcontainer {
+  height: 100%;
+  width: 800px;
+  position: absolute;
+  z-index: 1000;
+  left: 200px;
+  bottom: -200px;
+}
+
+#messagetablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the Message Show Page */
+
+#showmessagecontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 250px;
+  bottom: -120px;
+}
+
+#newmessageshowicon {
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  z-index: 800;
+  left: 500px;
+  bottom: 20px;
+  background-size: cover;
+  background-image: url('showmessage.png');
+}
+
+#showmessagename {
+  font-family: 'Lobster', cursive;
+}
+
+.showmessagefont {
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the New Message Page */
+
+#newmessagetitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 440px;
+  font-family: 'Lobster', cursive;
+}
+
+#newmessageicon {
+  height: 375px;
+  width: 375px;
+  position: absolute;
+  z-index: 800;
+  left: 200px;
+  bottom: 25px;
+  background-image: url('sendtexticon.png');
+  background-size: cover;
+}
+
+#newmessagecontainer {
+  height: 500px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 675px;
+  bottom: -150px;
+}
+
+#sendmessagebutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 30px;
+  bottom: 180px;
+  font-family: 'Lobster', cursive;
+}
+
+#messagetime {
+  height: 100px;
+  width: 193px;
+  position: absolute;
+  z-index: 700;
+  left: 15px;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /* For New user/edit user page */
+
+#newusercontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  bottom: -200px;
+  left: 60px;
+}
+
+#newusertitle {
+  height: 100px;
+  width: 350px;
+  position: absolute;
+  z-index: 900;
+  font-family: 'Lobster', cursive;
+  left: 90px;
+  bottom: 360px;
+}
+
+#submitbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 60px;
+  font-family: 'Lobster', cursive;
+}
+
+.btn {
+  border: solid 2px black;
+}
+
+/* For user login page */
+
+#userlogincontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 300px;
+  bottom: -270px;
+}
+
+#logintitle {
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  z-index: 800;
+  left: 550px;
+  font-family: 'Lobster', cursive;
+}
+
+#loginicon {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  z-index: 900;
+  left: 550px;
+  bottom: 0px;
+  background-image: url('loginkey.png');
+  background-size: cover;
+}
+
+#submitloginbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 60px;
+  font-family: 'Lobster', cursive;
+}
+
+/* For User index page */
+
+thead {
+  width: 350px;
+  font-size: 7px;
+}
+
+tbody {
+  width: 350px;
+  font-size: 7px;
+}
+
+#userbutton {
+  font-size: 7px;
+}
+
+#userindextitle {
+  height: 100%;
+  width: 350px;
+  position: absolute;
+  z-index: 900;
+  font-family: 'Lobster', cursive;
+  left: 120px;
+}
+
+#userlistcontainer {
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+  left: 10px;
+  bottom: -150px;
+}
+
+#usertablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+/* For Contact index page */
+
+#contactindextitle {
+  height: 100%;
+  width: 350px;
+  position: absolute;
+  z-index: 900;
+  left: 100px;
+  bottom: -120px;
+  font-family: 'Lobster', cursive;
+}
+
+#contactlistcontainer {
+  height: 300px;
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+  left: 30px;
+  bottom: 100px;
+}
+
+#createcontactbutton {
+  position: absolute;
+  z-index: 1100;
+  left: 0px;
+  bottom: -30px;
+  left: 10px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
+
+#contacttablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+/* For New/Edit Contact page */
+
+#newcontactcontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  bottom: -275px;
+  left: 70px;
+}
+
+#newcontacttitle {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  z-index: 900;
+  font-family: 'Lobster', cursive;
+  bottom: 350px;
+  left: 70px;
+}
+
+#submitcontactbutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 70px;
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the Contact Show Page */
+
+#showcontactcontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 105px;
+  bottom: -160px;
+}
+
+#showcontactname {
+  font-family: 'Lobster', cursive;
+}
+
+.showcontactfont {
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the Message Index Page */
+
+#messageindextitle {
+  height: 100px;
+  width: 350px;
+  position: absolute;
+  z-index: 900;
+  font-family: 'Lobster', cursive;
+  left: 15px;
+  bottom: 360px;
+}
+
+#messagelistcontainer {
+  height: 300px;
+  width: 100px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 110px;
+  left: 10px;
+}
+
+#messagetablelabels {
+  font-family: 'Lobster', cursive;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+  left: 0px;
+  bottom: -25px;
+}
+
+/* This is for the Message Show Page */
+
+#showmessagecontainer {
+  height: 600px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 75px;
+  bottom: -125px;
+}
+
+#showmessagename {
+  font-family: 'Lobster', cursive;
+}
+
+.showmessagefont {
+  font-family: 'Lobster', cursive;
+}
+
+/* This is for the New Message Page */
+
+#newmessagetitle {
+  height: 100px;
+  width: 300px;
+  position: absolute;
+  z-index: 900;
+  font-family: 'Lobster', cursive;
+  left: 70px;
+  bottom: 350px;
+}
+
+#newmessagecontainer {
+  height: 500px;
+  width: 193px;
+  position: absolute;
+  z-index: 1000;
+  left: 63px;
+  bottom: -120px;
+}
+
+#sendmessagebutton {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  z-index: 600;
+  left: 30px;
+  bottom: 180px;
+  font-family: 'Lobster', cursive;
+}
+
+#messagetime {
+  height: 100px;
+  width: 193px;
+  position: absolute;
+  z-index: 700;
+  left: 15px;
+}
+
+#createmessagebutton {
+  position: absolute;
+  z-index: 1100;
+  left: 700px;
+  bottom: 360px;
+  border: 2px solid black;
+  font-family: 'Lobster', cursive;
+}
 }
 
