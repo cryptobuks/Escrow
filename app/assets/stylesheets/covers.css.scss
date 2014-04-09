@@ -31,7 +31,7 @@ nav {
 /* For the launch page */
 
 #signupbutton {
-	position: absolute;
+	position: relative;
 	z-index: 700;
 	left: 650px;
 	bottom: 90px;
@@ -40,7 +40,7 @@ nav {
 }
 
 #loginbutton {
-	position: absolute;
+	position: relative;
 	z-index: 700;
 	left: 850px;
 	bottom: 90px;
@@ -71,7 +71,7 @@ nav {
 	height: 600px;
   background-size: cover;
   background-image: url('iphone.png');
-  position: absolute;
+  position: relative;
   z-index: 1000;
   bottom: -45px;
   left: 50px;
@@ -82,7 +82,7 @@ nav {
 	height: 200px;
 	font-family: 'Lobster', cursive;
 	font-size: 160px;
-	position: absolute;
+	position: relative;
 	z-index: 900;
 	left: 600px;
 	bottom: 460px;
@@ -93,7 +93,7 @@ nav {
 	height: 300px;
 	font-family: 'Lobster', cursive;
 	font-size: 35px;
-	position: absolute;
+	position: relative;
 	z-index: 800;
 	left: 600px;
 	bottom: 100px;
