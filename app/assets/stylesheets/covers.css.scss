@@ -30,75 +30,68 @@ nav {
 
 /* For the launch page */
 
-#signupbutton {
-	position: relative;
-	z-index: 700;
-	left: 650px;
-	bottom: 90px;
-	font-family: 'Lobster', cursive;
-	border: 2px solid black;
-}
-
-#loginbutton {
-	position: relative;
-	z-index: 700;
-	left: 850px;
-	bottom: 90px;
-	font-family: 'Lobster', cursive;
-	border: 2px solid black;
-}
-
-.background {
-	background-color: white;
-}
-
-#top-div {
-	height: 275px;
-	width: 100%;
-	background-color: white;
-	margin-bottom: -100px;
-}
-
-#bottom-div {
+#stripe {
 	height: 275px;
 	width: 100%;
 	background-color: #437DD4;
-	margin-bottom: -125px;
+	margin: 175px 0;
+}
+
+#stripe > div {
+  position: relative;
+  display: inline-block;
 }
 
 #iphone {
-	width: 400px;
-	height: 600px;
+  width: 400px;
+  height: 600px;
+  top: -100px;
+  left: 50px;
   background-size: cover;
   background-image: url('iphone.png');
+}
+
+#launchcontainer {
+  height: 100%;
+  width: 500px;
+  left: 200px;
+  top: -200px;
+}
+
+#launchcontainer > div, a {
   position: relative;
-  z-index: 1000;
-  bottom: -45px;
-  left: 50px;
 }
 
 #title {
-	width: 500px;
 	height: 200px;
+  width: 500px;
 	font-family: 'Lobster', cursive;
 	font-size: 160px;
-	position: relative;
-	z-index: 900;
-	left: 600px;
-	bottom: 460px;
+  top: -75px;
 }
 
 #description {
-	width: 500px;
 	height: 300px;
+  width: 500px;
 	font-family: 'Lobster', cursive;
 	font-size: 35px;
-	position: relative;
-	z-index: 800;
-	left: 600px;
-	bottom: 100px;
 	color: white;
 	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+  top: -20px;
+}
+
+#signupbutton {
+  font-family: 'Lobster', cursive;
+  border: 2px solid black;
+  left: 75px;
+  top: -50px;
+}
+
+#loginbutton {
+  font-family: 'Lobster', cursive;
+  border: 2px solid black;
+  left: 110px;
+  top: -50px;
 }
 
 /* For the index page */
