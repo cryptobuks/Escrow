@@ -33,8 +33,8 @@ nav {
 #signupbutton {
 	position: absolute;
 	z-index: 700;
-	left: 625px;
-	bottom: 50px;
+	left: 650px;
+	bottom: 90px;
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
 }
@@ -42,8 +42,8 @@ nav {
 #loginbutton {
 	position: absolute;
 	z-index: 700;
-	left: 825px;
-	bottom: 50px;
+	left: 850px;
+	bottom: 90px;
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
 }
@@ -56,7 +56,7 @@ nav {
 	height: 275px;
 	width: 100%;
 	background-color: white;
-	margin-bottom: -125px;
+	margin-bottom: -100px;
 }
 
 #bottom-div {
@@ -73,7 +73,8 @@ nav {
   background-image: url('iphone.png');
   position: absolute;
   z-index: 1000;
-  bottom: -75px;
+  bottom: -45px;
+  left: 50px;
 }
 
 #title {
@@ -83,8 +84,8 @@ nav {
 	font-size: 160px;
 	position: absolute;
 	z-index: 900;
-	left: 550px;
-	bottom: 415px;
+	left: 600px;
+	bottom: 460px;
 }
 
 #description {
@@ -94,8 +95,8 @@ nav {
 	font-size: 35px;
 	position: absolute;
 	z-index: 800;
-	left: 550px;
-	bottom: 65px;
+	left: 600px;
+	bottom: 100px;
 	color: white;
 	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
 }
@@ -192,7 +193,7 @@ nav {
 	z-index: 700;
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
-	bottom: 20px;
+	bottom: 50px;
 	left: 40px;
 }
 
@@ -201,7 +202,7 @@ nav {
 	z-index: 700;
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
-	bottom: 20px;
+	bottom: 50px;
 	left: 180px;
 }
 
@@ -216,7 +217,7 @@ nav {
   background-image: url('iphone.png');
   position: absolute;
   z-index: 1000;
-  bottom: 0px;
+  bottom: 50px;
   left: -20px;
 }
 
@@ -228,7 +229,6 @@ nav {
 	position: absolute;
 	z-index: 900;
 	left: 50px;
-  bottom: 460px;
 	color: white;
 	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
 }
