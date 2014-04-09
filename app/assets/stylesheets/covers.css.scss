@@ -192,7 +192,7 @@ nav {
 	z-index: 700;
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
-	bottom: 50px;
+	bottom: 20px;
 	left: 40px;
 }
 
@@ -201,7 +201,7 @@ nav {
 	z-index: 700;
 	font-family: 'Lobster', cursive;
 	border: 2px solid black;
-	bottom: 50px;
+	bottom: 20px;
 	left: 180px;
 }
 
@@ -216,7 +216,7 @@ nav {
   background-image: url('iphone.png');
   position: absolute;
   z-index: 1000;
-  bottom: 50px;
+  bottom: 0px;
   left: -20px;
 }
 
@@ -228,6 +228,7 @@ nav {
 	position: absolute;
 	z-index: 900;
 	left: 50px;
+  bottom: 460px;
 	color: white;
 	text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
 }
