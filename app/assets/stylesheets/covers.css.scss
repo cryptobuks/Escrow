@@ -243,7 +243,7 @@ nav {
 	position: absolute;
 	z-index: 900;
 	left: 30px;
-	bottom: 410px;
+	bottom: 400px;
 }
 
 #appexplanation {
@@ -616,8 +616,8 @@ nav {
   width: 193px;
   position: absolute;
   z-index: 1000;
-  bottom: -200px;
-  left: 60px;
+  bottom: -240px;
+  left: 70px;
 }
 
 #newusertitle {
@@ -626,8 +626,8 @@ nav {
   position: absolute;
   z-index: 900;
   font-family: 'Lobster', cursive;
-  left: 90px;
-  bottom: 360px;
+  left: 95px;
+  bottom: 320px;
 }
 
 #submitbutton {
@@ -636,6 +636,7 @@ nav {
   position: absolute;
   z-index: 600;
   left: 60px;
+  bottom: 180px;
   font-family: 'Lobster', cursive;
 }
 
@@ -650,8 +651,8 @@ nav {
   width: 193px;
   position: absolute;
   z-index: 1000;
-  left: 300px;
-  bottom: -270px;
+  left: 70px;
+  bottom: -290px;
 }
 
 #logintitle {
@@ -659,19 +660,9 @@ nav {
   width: 500px;
   position: absolute;
   z-index: 800;
-  left: 550px;
+  left: 113px;
+  top: 120px;
   font-family: 'Lobster', cursive;
-}
-
-#loginicon {
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  z-index: 900;
-  left: 550px;
-  bottom: 0px;
-  background-image: url('loginkey.png');
-  background-size: cover;
 }
 
 #submitloginbutton {
@@ -679,7 +670,8 @@ nav {
   width: 100px;
   position: absolute;
   z-index: 600;
-  left: 60px;
+  left: 55px;
+  bottom: 380px;
   font-family: 'Lobster', cursive;
 }
 
@@ -706,6 +698,7 @@ tbody {
   z-index: 900;
   font-family: 'Lobster', cursive;
   left: 120px;
+  bottom: -135px;
 }
 
 #userlistcontainer {
@@ -713,8 +706,8 @@ tbody {
   width: 100px;
   position: absolute;
   z-index: 1000;
-  left: 10px;
-  bottom: -150px;
+  left: 30px;
+  bottom: -160px;
 }
 
 #usertablelabels {
@@ -729,7 +722,7 @@ tbody {
   position: absolute;
   z-index: 900;
   left: 100px;
-  bottom: -120px;
+  bottom: -140px;
   font-family: 'Lobster', cursive;
 }
 
@@ -738,8 +731,8 @@ tbody {
   width: 100px;
   position: absolute;
   z-index: 1000;
-  left: 30px;
-  bottom: 100px;
+  left: 45px;
+  bottom: 80px;
 }
 
 #createcontactbutton {
@@ -773,8 +766,8 @@ tbody {
   position: absolute;
   z-index: 900;
   font-family: 'Lobster', cursive;
-  bottom: 350px;
-  left: 70px;
+  bottom: 330px;
+  left: 80px;
 }
 
 #submitcontactbutton {
@@ -782,7 +775,7 @@ tbody {
   width: 100px;
   position: absolute;
   z-index: 600;
-  left: 70px;
+  left: 40px;
   font-family: 'Lobster', cursive;
 }
 
@@ -814,7 +807,7 @@ tbody {
   z-index: 900;
   font-family: 'Lobster', cursive;
   left: 15px;
-  bottom: 360px;
+  bottom: 330px;
 }
 
 #messagelistcontainer {
@@ -822,8 +815,8 @@ tbody {
   width: 100px;
   position: absolute;
   z-index: 1000;
-  bottom: 110px;
-  left: 10px;
+  bottom: 90px;
+  left: 45px;
 }
 
 #messagetablelabels {
@@ -867,7 +860,7 @@ tbody {
   z-index: 900;
   font-family: 'Lobster', cursive;
   left: 70px;
-  bottom: 350px;
+  bottom: 330px;
 }
 
 #newmessagecontainer {

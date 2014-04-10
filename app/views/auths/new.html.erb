@@ -7,8 +7,6 @@
 
 <div class="container" id="userlogincontainer">
 
-<p id="notice"><%= notice %></p>
-
 <div class="login">
 	<%= form_for @user, {url:"/auths", method:"post"} do |u|%>
 	<%= u.text_field :email, :placeholder => "E-Mail", :class => 'field' %><br /><br />
