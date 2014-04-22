@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 
   def create
       if User.create(user_params)
-        redirect_to action: 'index'
+        redirect_to covers_path
         flash[:notice] = "successfully created user!"
       else
         render action: 'new'
