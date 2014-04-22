@@ -25,7 +25,12 @@
             <!-- <li> --><%#= link_to , edit_user_path(current_user.id) %><!-- 
              -->
             <li class="divider"></li>
-            <li><a href="#">Log Out</a></li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp<%= current_user ? current_user.email : "" %></li>
+            <% if current_user %>
+              <li><%= link_to "Log Out", auths_path, method: :delete %></li>
+            <% else %>
+              <li><a href="<%= new_auth_path %>">Log In</a></li>
+            <% end %>
           </ul>
         </li>
       </ul>
